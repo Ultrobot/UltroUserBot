@@ -136,7 +136,7 @@ session() {
     echo "Generating session..."
     if [ -z "$sess" ]; then
         python3 windows_startup_script.py
-        python3.7 -m userbot test
+        python3.7 -m ultrobot test
         save_prog "sess"
     fi
     echo "DONE!!"
@@ -150,7 +150,7 @@ dockerspin() {
     sudo systemctl enable docker
     sudo chmod 777 /var/run/docker.sock
     cd ~/Telegram-UserBot
-    docker build -t userbot .
+    docker build -t ultrobot .
     save_prog "dock"
     fi
     echo "DONE!!"
@@ -160,11 +160,11 @@ dockerspin() {
 systemd() {
     echo "Sys service..."
     if [ -z "$sysserv" ]; then
-        sudo mv userbot /etc/systemd/system/userbot.service
+        sudo mv ultrobot /etc/systemd/system/userbot.service
         save_prog "sysserv"
     fi
-    sudo systemctl start userbot.service
-    sudo systemctl enable userbot.service
+    sudo systemctl start ultrobot.service
+    sudo systemctl enable ultrobot.service
     echo "DONE!!"
 }
 
