@@ -25,7 +25,7 @@ req_install() {
 }
 
 get_session() {
-    curl -sLo userbot.session "$PULL_LINK"
+    curl -sLo ultrobot.session "$PULL_LINK"
 }
 
 test_run() {
