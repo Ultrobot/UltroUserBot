@@ -29,7 +29,7 @@ get_session() {
 }
 
 test_run() {
-    python3 -m userbot test
+    python3 -m ultrobot test
     STATUS=${?}
     export STATUS
 }
