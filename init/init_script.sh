@@ -160,7 +160,7 @@ dockerspin() {
 systemd() {
     echo "Sys service..."
     if [ -z "$sysserv" ]; then
-        sudo mv ultrobot /etc/systemd/system/userbot.service
+        sudo mv ultrobot /etc/systemd/system/ultrobot.service
         save_prog "sysserv"
     fi
     sudo systemctl start ultrobot.service
