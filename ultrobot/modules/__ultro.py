@@ -1,11 +1,11 @@
-from userbot.cmdhelp import CmdHelp
-from userbot import cmdhelp
-from userbot import CMD_HELP
-from userbot.events import register
+from ultrobot.cmdhelp import CmdHelp
+from ultrobot import cmdhelp
+from ultrobot import CMD_HELP
+from ultrobot.events import register
 
 # ██████ LANGUAGE CONSTANTS ██████ #
 
-from userbot.language import get_value
+from ultrobot.language import get_value
 LANG = get_value("__ultro")
 
 # ████████████████████████████████ #
