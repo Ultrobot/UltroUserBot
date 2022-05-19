@@ -1,9 +1,9 @@
-from userbot import BOT_USERNAME
-from userbot.events import register
+from ultrobot import BOT_USERNAME
+from ultrobot.events import register
 
 # ██████ LANGUAGE CONSTANTS ██████ #
 
-from userbot.language import get_value
+from ultrobot.language import get_value
 LANG = get_value("__helpme")
 
 # ████████████████████████████████ #
